@@ -1,0 +1,174 @@
+<%= render :partial => "/home/navbar" %>
+
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center white-text "><span class ="pink-text text-lighten-4">Make</span>You<span class ="pink-text text-lighten-4">Up</span></h1>
+      <div class="row center">
+        <h5 class="header col s12 light white-text ">전문가에게 뷰티 컨설팅을 저렴한 가격에 받으세요</h5>
+      </div>
+      <div class="row center">
+        <a href="#!" id="download-button" class=" pink-text text-lighten-4" style="font-family:Nanum Brush Script"><h2>시작하기</h2></a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div class="parallax">
+    <img class="responsive-img" src ="<%= image_path "intro-bg4.jpg" %>" >
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <div class="row center">
+      <div class="col s12 m12 l12">
+        <h3><span class ="pink-text text-lighten-4">Make</span>You<span class ="pink-text text-lighten-4">Up</span>은?</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12 center">
+        <img class="responsive-img" src ="<%= image_path "intro1.png" %>" height ="80%" width ="80%"style ="margin:20px">
+      </div>
+    </div>
+    <div class="row">
+      <div class = "col s12 m12 l12">
+        <h5>메이크 유 업은 뷰티컨설팅이 필요한 고객과 전문가를 중개하여, <br />뷰티컨설팅을 합리적인 가격에 제공하는 서비스입니다.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+        <div class = "row">
+          <div class = "col s12 m6 l6 right">
+            <div class="card-panel medium transparent ">
+              <div class="card-content white-text ">
+                <span class="card-title"><h4>Customer</h4></span>
+                <p>
+                  전문가에게 합리적인 가격으로 1:1 메이크업 코칭을 받으세요.
+                  퍼스널컬러 진단, 트랜디한 메이크업 등 다양한 프로그램을
+                  선택하여 코칭 받을 수 있습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="parallax">
+    <img class="responsive-img" src ="<%= image_path "index3.jpg" %>" >
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <div class="row center">
+      <div class="col s12 m12 l12">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <div class = "row">
+        <div class = "col s12 m6 l6">
+          <div class="card-panel medium transparent">
+            <div class="card-content white-text">
+              <span class="card-title"><h4>Make up Artist</h4></span>
+              <p>
+                수업 회당 약 30,000₩의 수입을 보장합니다.
+                Make up Artist들을 위한 정기적 세미나를 개최해서 Artist간의
+                정보교류를 할 수 있습니다.
+                현장에서 고객을 실제로 만나 많은양의 Feedback을 받을 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="parallax">
+    <img class="responsive-img" src ="<%= image_path "index2.jpg" %>" >
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class = "col s12 m12 l12">
+        <div class = "center">
+          <h4>사전 등록</h4>
+          <h6>서비스가 출시되면 이메일로 알림을 드리겠습니다.</h6>
+          <div class = "divider"></div>
+          <br />
+        </div>
+      </div>
+
+      <div class = "col s12 m6 l6">
+        <div class = "container">
+          <h5 class = "center">고객</h5>
+          <div class="input-field col s12 m12 l12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="name_customer" type="text" >
+            <label for="name_customer">성명</label>
+          </div>
+          <div class="input-field col s12 m12 l12">
+            <i class="material-icons prefix">email</i>
+            <input id="email_customer" type="email" class="validate">
+            <label for="email_customer">Email</label>
+          </div>
+          <div class = "col s12 m12 l12 center" style = "margin:10px">
+            <button class="btn pink lighten-4 waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col s12 m6 l6">
+        <div class = "container">
+          <h5 class = "center">아티스트</h5>
+          <div class="input-field col s12 m12 l12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="name_artist" type="text" >
+            <label for="name_artist">성명</label>
+          </div>
+          <div class="input-field col s12 m12 l12">
+            <i class="material-icons prefix">phone</i>
+            <input id="phone" type="text" >
+            <label for="phone">연락처</label>
+          </div>
+          <div class="input-field col s12 m12 l12">
+            <i class="material-icons prefix">email</i>
+            <input id="email_artist" type="email" class="validate">
+            <label for="email_artist">Email</label>
+          </div>
+          <div class = "col s12 m12 l12 center" style = "margin:10px">
+            <button class="btn pink lighten-4 waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<%= render :partial => "/home/footer" %>
+
+<script>
+  $(document).ready(function(){
+    $(".button-collapse").sideNav();
+    $('.parallax').parallax();
+  });
+</script>
