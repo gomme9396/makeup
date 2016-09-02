@@ -1,0 +1,31 @@
+<div class = "container">
+  <div class = "row">
+    <div class = "col m6 l6">
+      <h5>고객명단</h5>
+      <% @list_customer.each do |a| %>
+      <div class = "card">
+
+          이름 : <%= a.name_customer %> <br />
+          이메일 : <%= a.email_customer %>
+
+      </div>
+      <% end %>
+    </div>
+    <div class = "col m6 l6">
+      <h5>아티스트 명단</h5>
+      <% @list_artist.each do |b| %>
+      <div class = "card black white-text">
+        이름 : <%= b.name_artist %><br />
+        연락처 : <%= b.phone_artist %><br />
+        이메일 : <%= b.email_artist %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class = "container">
+  <div class = "row">
+
+  </div>
+</div>
