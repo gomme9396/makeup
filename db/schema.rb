@@ -11,19 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160902102533) do
+ActiveRecord::Schema.define(version: 20160904104632) do
 
   create_table "artists", force: :cascade do |t|
-    t.text     "name_artist"
-    t.text     "phone_artist"
-    t.text     "email_artist"
+    t.string   "name_artist"
+    t.string   "phone_artist"
+    t.string   "email_artist"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
 
-  create_table "lists", force: :cascade do |t|
-    t.text     "name_customer"
-    t.text     "email_customer"
+  create_table "customers", force: :cascade do |t|
+    t.string   "name_customer"
+    t.string   "email_customer"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end
