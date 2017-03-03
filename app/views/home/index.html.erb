@@ -1,73 +1,136 @@
-<%= render :partial => "/home/navbar" %>
 
 
-<div id="index-banner" class="parallax-container">
+<div id="index-banner" class="parallax-container" style = "height:800px">
+  <div class = "navbar-fixed">
+    <nav class="black z-depth-0" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo" style="font-weight:700"><span class ="white-text">Make</span><span class ="red-text text-lighten-1">AWAKE</span></a>
+        <ul class="right hide-on-med-and-down">
+          <!-- <li><a class = "white-text"><i class="material-icons left">search</i>컨설팅 검색</a></li>
+          <li><a class = "modal-trigger white-text" href= "#modal1"><i class="material-icons left">perm_identity</i>로그인</a></li>
+          <li><a class = "white-text"><i class="material-icons left">info_outline</i>서비스소개</a></li> -->
+
+
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
   <div class="section no-pad-bot">
-    <div class="container">
-      <br><br>
-      <h1 class="header center white-text "><span class ="pink-text text-lighten-4">Make</span> You <span class ="pink-text text-lighten-4">Up</span></h1>
-      <div class="row center">
-        <h5 class="header col s12 light white-text " style="font-weight:700">아침일찍 구름낀</h5>
-      </div>
-      <div class="row center">
-        <a href="#!" id="download-button" class=" pink-text text-lighten-4" style="font-family:Nanum Brush Script"><h2>시작하기</h2></a>
-      </div>
-      <br><br>
 
+    <div class="container">
+
+      <br><br><br><br><br><br><br><br>
+      <div class= "row" >
+        <h1 class="header white-text " style="margin-bottom:0px">뜻 밖의 당신</h1>
+      </div>
+      <div class="row ">
+        <h5 class="header col s12 light white-text " style="font-weight:700; padding:0px">오늘, 당신만의 메이크업을 찾아보시는건 어때요?</h5>
+      </div>
+      <div class="row">
+        <a class="waves-effect waves-light red lighten-1 btn" href="https://goo.gl/forms/Z8AMCRx5QqZpooZl1">컨설팅 신청하기</a>
+      </div>
     </div>
   </div>
   <div class="parallax">
-    <img class="responsive-img" src ="<%= image_path "intro-bg4.jpg" %>" >
+    <img class="responsive-img" src ="<%= image_path "intro-bg3.jpg" %>" >
   </div>
 </div>
 
 <div class="container">
+  <h4 class = "center black-text" style="font-weight:400">메이크어웨이크는 <span class = "red-text text-lighten-1">당신</span>에게만 집중합니다.</h4>
+
+  <div class = "section">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="red-text text-lighten-1 large material-icons">sentiment_very_satisfied</i></h2>
+          <h5 class="center">자신만의 화장법을 찾으세요</h5>
+
+          <p class="light">전문가의 도움을 통해서 고객님에게 가장 잘 어울리는 화장법을 찾아보세요!</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="red-text text-lighten-1 large material-icons">watch_later</i></h2>
+          <h5 class="center">더이상 시간과 돈을 낭비하지마세요</h5>
+
+          <p class="light">유튜브, TV 뷰티쇼를 보며 따라하는 시간을 줄여보세요! 또한 예전 처럼 화장품을 잘 못사서 고생하는 일이 없도록 해보세요!</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="red-text text-lighten-1 large material-icons">settings</i></h2>
+          <h5 class="center">자신의 재능을 타인과 공유하세요</h5>
+
+          <p class="light">자신이 가진 화장에 대한 재능을 다른 사람과 나누고 수익을 챙기세요!</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
   <div class="section">
     <div class="row center">
       <div class="col s12 m12 l12">
-        <h3><span class ="pink-text text-lighten-4">Make</span> You <span class ="pink-text text-lighten-4">Up</span>은?</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m12 l12 center">
-        <img class="responsive-img" src ="<%= image_path "intro1.png" %>" height ="80%" width ="80%"style ="margin:20px">
-      </div>
-    </div>
-    <div class="row">
-      <div class = "col s12 m12 l12">
-        <h5 class = "center">메이크 유 업은 뷰티 컨설팅이 필요한 고객과 전문가를 중개하여, <br />뷰티 컨설팅을 합리적인 가격에 제공하는 서비스입니다.</h5>
       </div>
     </div>
   </div>
+
 </div>
 
 <div class="parallax-container">
   <div class="section no-pad-bot">
     <div class="container">
-      <br><br><br><br>
+      <h4 class = "center black-text">고객들의 <span class ="red-text text-lighten-1">후기</span></h4>
+
+      <br><br>
+
         <div class = "row">
-          <div class = "col s12 m6 l6 right">
-            <div class="card-panel medium grey darken-4 ">
-              <div class="card-content white-text ">
-                <span class="card-title"><h4 class = "pink-text text-lighten-4">Customer</h4></span>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>
-                      전문가에게 합리적인 가격으로 1:1 메이크업 코칭을 받으세요.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        퍼스널컬러 진단, 트랜디한 메이크업 등 다양한 프로그램을
-                        선택하여 코칭 받을 수 있습니다.
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class = "col s12 m4 l4 ">
+            <div class="card-panel medium ">
+              <div class="card-content">
+                <span class="card-title"><h5 class = "">화장에 대한 자신감이 늘었어요</h5></span>
+                <h6>장OO 고객님</h6>
+                <p>
+                  내가 원하는 메이크업을 전문가의 도움을 받아 쉽게 배울 수 있고 실시간으로 피드백을 받을 수 있다! 그리고 자연스러운 화장!
+                </p>
               </div>
             </div>
           </div>
+
+          <div class = "col s12 m4 l4 ">
+            <div class="card-panel medium ">
+              <div class="card-content">
+                <span class="card-title"><h5 class = "">또 다른 저를 발견했어요!</h5></span>
+                <h6>서OO 고객님</h6>
+                <p>
+                  내가 원하는 메이크업을 전문가의 도움을 받아 쉽게 배울 수 있고 실시간으로 피드백을 받을 수 있다! 그리고 자연스러운 화장!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col s12 m4 l4 ">
+            <div class="card-panel medium ">
+              <div class="card-content">
+                <span class="card-title"><h5 class = "">화장에 대한 자신감이 늘었어요</h5></span>
+                <h6>장OO 고객님</h6>
+                <p>
+                  내가 원하는 메이크업을 전문가의 도움을 받아 쉽게 배울 수 있고 실시간으로 피드백을 받을 수 있다! 그리고 자연스러운 화장!
+                </p>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -76,21 +139,14 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="section">
-    <div class="row center">
-      <div class="col s12 m12 l12">
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="parallax-container">
+<!-- <div class="parallax-container">
   <div class="section no-pad-bot">
     <div class="container">
       <br><br><br><br>
       <div class = "row">
         <div class = "col s12 m6 l6">
+
           <div class="card-panel medium grey darken-4">
             <div class="card-content white-text">
               <span class="card-title"><h4 class = "pink-text text-lighten-4">Make up Artist</h4></span>
@@ -116,6 +172,7 @@
               </table>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -124,9 +181,10 @@
   <div class="parallax">
     <img class="responsive-img" src ="<%= image_path "index2.jpg" %>" >
   </div>
-</div>
+</div> -->
 
-<div class="container">
+<!-- <div class="container">
+
   <div class="section">
     <div class="row">
       <div class = "col s12 m12 l12">
@@ -149,8 +207,8 @@
             </div>
             <div class="input-field col s12 m12 l12">
               <i class="material-icons prefix">phone</i>
-              <input name = "phone_artist"id="phone_artist" type="text" required>
-              <label for="phone_artist">연락처</label>
+              <input name = "phone_customer"id="phone_customer" type="text" required>
+              <label for="phone_customer">연락처</label>
             </div>
             <div class="input-field col s12 m12 l12">
               <i class="material-icons prefix">email</i>
@@ -196,43 +254,32 @@
 
     </div>
   </div>
-</div>
+</div> -->
 
-<div id="modal1" class="modal modal-fixed-footer">
-     <div class="modal-content">
-       <h4>공지사항</h4>
-       <p>루미뷰 가입하고 리뷰 남긴 후, <a href = "https://goo.gl/forms/j6EqSLDDJHJvlIfF2">피드백 설문</a>을 해주시면
-          선착순 100명에게 스타벅스 아메리카노 기프티콘 드려요! (세가지 모두 해야 받으실 수 있어용!) 허위정보 No 성의없는 작성도 No
-          자취 하느라 힘든 충남대 주변 자취생을 위해 루미뷰가 커피 한 잔 쏩니다!
-          원룸 리뷰 플랫폼 루미뷰가 프로모션을 오늘부터 진행합니다.
-          루미뷰에 회원가입하고 원룸 정보를 등록 후
-          피드백 설문을 작성한 선착순 100명에게
-          스타벅스 아메리카노 톨 사이즈 기프티콘이 팡팡!!
-          가입하고 리뷰 및 피드백을 남겨 주시면 조건 없이 드려요!
-          가입 및 리뷰 / 피드백 설문 작성 완료해주신다면
-          10월 8일 저녁까지 기프티콘을 보내드립니다.
-          지치는 일상, 루미뷰와 함께 커피 한 잔 어떠세요?:)
-          * 허위정보나 성의없는 정보를 제공할 경우, 기프티콘 수여 대상에서 제외될 수 있음을 알려드립니다.
-          ** 충남대 주변 거주 자취생 한정 프로모션입니다.
-          *** 피드백 설문 주소 입니다 : <a href = "https://goo.gl/forms/j6EqSLDDJHJvlIfF2">https://goo.gl/forms/j6EqSLDDJHJvlIfF2</a>
-          **** 가입, 원룸 정보 등록, 피드백 설문 작성 이렇게 세 가지를 모두 작성하셔야 응모가 완료됩니다.</p>
-     </div>
-     <div class="modal-footer">
-       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">확인</a>
-     </div>
-   </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+  </div>
+
 
 <%= render :partial => "/home/footer" %>
 
 <script>
   $(document).ready(function(){
+
+
+    $('.modal').modal();
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
-    $('#modal1').openModal();
     $('.slider').slider();
 
   });
 
-  $(document).ready(function(){
-   });
 </script>
