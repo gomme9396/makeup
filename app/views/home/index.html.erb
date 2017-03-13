@@ -1,17 +1,17 @@
 
 
 <div id="index-banner" class="parallax-container" style = "height:800px">
-  <div class = "navbar-fixed">
+  <!-- <div class = "navbar-fixed">
     <nav class="black z-depth-0" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo" style="font-weight:700"><span class ="white-text">Make</span><span class ="red-text text-lighten-1">AWAKE</span></a>
-        <ul class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down"> -->
           <!-- <li><a class = "white-text"><i class="material-icons left">search</i>컨설팅 검색</a></li>
           <li><a class = "modal-trigger white-text" href= "#modal1"><i class="material-icons left">perm_identity</i>로그인</a></li>
           <li><a class = "white-text"><i class="material-icons left">info_outline</i>서비스소개</a></li> -->
 
 
-        </ul>
+        <!-- </ul>
 
         <ul id="nav-mobile" class="side-nav">
 
@@ -19,7 +19,8 @@
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-  </div>
+  </div> -->
+  <%= render :partial => "/home/navbar" %>
 
   <div class="section no-pad-bot">
 
@@ -27,13 +28,13 @@
 
       <br><br><br><br><br><br><br><br>
       <div class= "row" >
-        <h1 class="header white-text " style="margin-bottom:0px">뜻밖의 당신</h1>
+        <h1 class="header white-text " style="font-weight:700; margin-bottom:0px">뜻밖의 당신</h1>
       </div>
       <div class="row ">
-        <h5 class="header col s12 light white-text " style="font-weight:700; padding:0px">오늘, 당신만의 메이크업을 찾아보시는건 어때요?</h5>
+        <h5 class="header col s12 light white-text " style="font-weight:400; padding:0px">오늘, 당신만의 메이크업을 찾아보시는건 어때요?</h5>
       </div>
       <div class="row">
-        <a class="waves-effect waves-light red lighten-1 btn" href="https://goo.gl/forms/Z8AMCRx5QqZpooZl1">컨설팅 신청하기</a>
+        <a class="waves-effect waves-light red lighten-1 btn-large" href="https://goo.gl/forms/Z8AMCRx5QqZpooZl1" style="font-weight:500">컨설팅 신청하기</a>
       </div>
     </div>
   </div>
@@ -67,7 +68,7 @@
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="red-text text-lighten-1 large material-icons">settings</i></h2>
+          <h2 class="center light-blue-text"><i class="red-text text-lighten-1 large material-icons">wb_incandescent</i></h2>
           <h5 class="center">자신의 재능을 타인과 공유하세요</h5>
 
           <p class="light">자신이 가진 화장에 대한 재능을 다른 사람과 나누고 수익을 챙기세요!</p>
@@ -89,13 +90,13 @@
 <div class="parallax-container">
   <div class="section no-pad-bot">
     <div class="container">
-      <h4 class = "center black-text">고객들의 <span class ="red-text text-lighten-1">후기</span></h4>
+      <h4 class = "center white-text">고객들의 <span class ="red-text text-lighten-1">후기</span></h4>
 
       <br><br>
 
         <div class = "row">
           <div class = "col s12 m4 l4 ">
-            <div class="card-panel medium ">
+            <div class="card-panel medium " style = "height:300px">
               <div class="card-content">
                 <span class="card-title"><h5 class = "">화장에 대한 자신감이 늘었어요</h5></span>
                 <h6>장OO 고객님</h6>
@@ -107,7 +108,7 @@
           </div>
 
           <div class = "col s12 m4 l4 ">
-            <div class="card-panel medium ">
+            <div class="card-panel medium " style = "height:300px">
               <div class="card-content">
                 <span class="card-title"><h5 class = "">또 다른 저를 발견했어요!</h5></span>
                 <h6>서OO 고객님</h6>
@@ -119,7 +120,7 @@
           </div>
 
           <div class = "col s12 m4 l4 ">
-            <div class="card-panel medium ">
+            <div class="card-panel medium " style = "height:300px">
               <div class="card-content">
                 <span class="card-title"><h5 class = "">화장에 대한 이해가 깊어졌습니다.</h5></span>
                 <h6>김OO 고객님</h6>
@@ -134,8 +135,8 @@
         </div>
       </div>
     </div>
-  <div class="parallax">
-    <img class="responsive-img" src ="<%= image_path "index3.jpg" %>" >
+  <div class="parallax black">
+    <!-- <img class="responsive-img" src ="<%= image_path "index3.jpg" %>" > -->
   </div>
 </div>
 
@@ -258,13 +259,22 @@
 
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
+  <div id="modal1" class="modal" >
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+      <div class = "row">
+        <div class = "card-penel red lighten-1 col s12 m6 l6 valign-wrapper hoverable" style = "cursor: pointer;height:300px; padding:0px" onclick="location.href='/user/login';">
+          <div class="row center valign">
+            <h2 class="light-blue-text"><i class="white-text large material-icons">sentiment_very_satisfied</i></h2>
+            <h5 class="white-text">일반고객 로그인</h5>
+          </div>
+        </div>
+        <div class = "card-penel black col s12 m6 l6 valign-wrapper hoverable" style = "cursor: pointer;height:300px; padding:0px" onclick="location.href='/user/login';">
+          <div class="row center valign">
+            <h2 class="light-blue-text"><i class="white-text large material-icons">brush</i></h2>
+            <h5 class="white-text">컨설턴트 로그인</h5>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

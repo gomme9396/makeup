@@ -2,7 +2,6 @@ class HomeController < ApplicationController
   def index
   end
 
-
   def write_customer
     @name_customer = params[:name_customer]
     @email_customer = params[:email_customer]
