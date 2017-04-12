@@ -1,0 +1,29 @@
+<%= render :partial => "/home/navbar" %>
+
+<div class = "container">
+  <div class = "card" style="margin:10px">
+    <div class = "container">
+      <div class = "card-content">
+        <span class = "card-title" style="font-weight:700">비밀번호를 잊으셨나요?</span><br />
+
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+          <%= devise_error_messages! %>
+
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "비밀번호 재설정하기", class: "btn" %> <%= link_to "돌아가기", :back , class: "btn"%>
+
+          </div>
+        <% end %>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>

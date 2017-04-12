@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { sessions: "users/sessions" }
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,14 +9,18 @@ Rails.application.routes.draw do
 
   get 'home/index'
   get 'home/list'
-  get 'user/login'
-  get 'user/join_guest'
-  get 'user/join_consultant'
+  get 'user/join'
 
-  post '/write_customer' => 'home#write_customer'
-  post '/write_artist' => 'home#write_artist'
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+
+  # 회원가입 기능 구현
+  # resources :users
+  # post 'user/join_path'
+
+  # 로그인 & 로그아운
+  # post 'user/login_path'
+  # get 'user/login'
+  # get 'user/logout'
+
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

@@ -1,74 +1,55 @@
 
+<%= render :partial => "/home/navbar" %>
 
-<div id="index-banner" class="parallax-container" style = "height:800px">
-  <!-- <div class = "navbar-fixed">
-    <nav class="black z-depth-0" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo" style="font-weight:700"><span class ="white-text">Make</span><span class ="red-text text-lighten-1">AWAKE</span></a>
-        <ul class="right hide-on-med-and-down"> -->
-          <!-- <li><a class = "white-text"><i class="material-icons left">search</i>컨설팅 검색</a></li>
-          <li><a class = "modal-trigger white-text" href= "#modal1"><i class="material-icons left">perm_identity</i>로그인</a></li>
-          <li><a class = "white-text"><i class="material-icons left">info_outline</i>서비스소개</a></li> -->
+<div id="index-banner" class="parallax-container hide-on-small-and-down" >
 
-
-        <!-- </ul>
-
-        <ul id="nav-mobile" class="side-nav">
-
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-  </div> -->
-  <%= render :partial => "/home/navbar" %>
-
-  <div class="section no-pad-bot">
 
     <div class="container">
 
-      <br><br><br><br><br><br><br><br>
-      <div class= "row" >
-        <h1 class="header white-text " style="font-weight:700; margin-bottom:0px">뜻밖의 당신</h1>
-      </div>
-      <div class="row ">
-        <h5 class="header col s12 light white-text " style="font-weight:400; padding:0px">오늘, 당신만의 메이크업을 찾아보시는건 어때요?</h5>
-      </div>
-      <div class="row">
-        <a class="waves-effect waves-light red lighten-1 btn-large" href="https://goo.gl/forms/Z8AMCRx5QqZpooZl1" style="font-weight:500">컨설팅 신청하기</a>
-      </div>
+      <br><br><br><br><br/>
+
+        <div class=  "row">
+          <h1 class=" black-text " style="font-weight:700; margin-bottom:0px">화장선생</h1>
+        </div>
+        <div class = "row ">
+          <h5 class=" col s12 light black-text " style="font-weight:400; padding:0px">자신만의 화장법을 찾는 가장 빠른 방법</h5>
+        </div>
+
+        <div class = "row">
+          <a class="waves-effect waves-light btn-large " href="https://goo.gl/forms/Z8AMCRx5QqZpooZl1" style="font-weight:500">컨설팅 신청하기</a>
+        </div>
+
     </div>
-  </div>
-  <div class="parallax">
-    <img class="responsive-img" src ="<%= image_path "intro-bg3.jpg" %>" >
+  <div class="parallax white">
+    <!-- <img class="responsive-img" src ="<%= image_path "intro-bg3.jpg" %>" > -->
   </div>
 </div>
 
+
 <div class="container">
-  <h4 class = "center black-text" style="font-weight:400">메이크어웨이크는 <span class = "red-text text-lighten-1">당신</span>에게만 집중합니다.</h4>
+  <h4 class = "center black-text" style="font-weight:400"><span style = "font-weight:700">화장선생</span>은 일대일 메이크업 컨설팅 서비스입니다.</h4>
 
   <div class = "section">
     <div class="row">
-      <div class="col s12 m4">
+      <div class="col s12 m4 l4">
         <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="red-text text-lighten-1 large material-icons">sentiment_very_satisfied</i></h2>
+          <h2 class="center light-blue-text"><i class="black-text large material-icons">sentiment_very_satisfied</i></h2>
           <h5 class="center">자신만의 화장법을 찾으세요</h5>
-
-          <p class="light">전문가의 도움을 통해서 고객님에게 가장 잘 어울리는 화장법을 찾아보세요!</p>
+          <p class="light">개인마다 어울리는 화장법이 다릅니다. 메이크업 전문가의 도움을 받아 자신만의 화장법을 찾아보세요</p>
         </div>
       </div>
 
-      <div class="col s12 m4">
+      <div class="col s12 m4 l4">
         <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="red-text text-lighten-1 large material-icons">watch_later</i></h2>
-          <h5 class="center">더이상 시간과 돈을 낭비하지마세요</h5>
-
-          <p class="light">유튜브, TV 뷰티쇼를 보며 따라하는 시간을 줄여보세요! 또한 예전 처럼 화장품을 잘 못사서 고생하는 일이 없도록 해보세요!</p>
+          <h2 class="center light-blue-text"><i class="black-text large material-icons">watch_later</i></h2>
+          <h5 class="center"></h5>
+          <p class="light">여러번의 시행착오를 통해 자신만의 메이크업을 찾아가는 시간보다 더욱 빠르게 자신만의 메이크업을 찾아보세요. 또한 기존 서비스대비 저렴한 가격을 서비스를 이용해보세요</p>
         </div>
       </div>
 
-      <div class="col s12 m4">
+      <div class="col s12 m4 l4">
         <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="red-text text-lighten-1 large material-icons">wb_incandescent</i></h2>
+          <h2 class="center light-blue-text"><i class="black-text large material-icons">wb_incandescent</i></h2>
           <h5 class="center">자신의 재능을 타인과 공유하세요</h5>
 
           <p class="light">자신이 가진 화장에 대한 재능을 다른 사람과 나누고 수익을 챙기세요!</p>
@@ -78,19 +59,14 @@
 
 
   </div>
-  <div class="section">
-    <div class="row center">
-      <div class="col s12 m12 l12">
-      </div>
-    </div>
-  </div>
-
 </div>
 
-<div class="parallax-container">
+
+
+<div class="parallax-container" style="overflow: scroll;">
   <div class="section no-pad-bot">
     <div class="container">
-      <h4 class = "center white-text">고객들의 <span class ="red-text text-lighten-1">후기</span></h4>
+      <h4 class = "center white-text">고객들의 후기</h4>
 
       <br><br>
 
@@ -141,128 +117,14 @@
 </div>
 
 
-<!-- <div class="parallax-container">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <br><br><br><br>
-      <div class = "row">
-        <div class = "col s12 m6 l6">
 
-          <div class="card-panel medium grey darken-4">
-            <div class="card-content white-text">
-              <span class="card-title"><h4 class = "pink-text text-lighten-4">Make up Artist</h4></span>
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      수업 회당 약 ₩30,000의 수입을 보장합니다.
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      Make up Artist들을 위한 정기적 세미나를 개최해서 Artist간의 정보를 교류 할 수 있습니다.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      현장에서 고객을 실제로 만나 많은양의 Feedback을 받을 수 있습니다.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="parallax">
-    <img class="responsive-img" src ="<%= image_path "index2.jpg" %>" >
-  </div>
-</div> -->
-
-<!-- <div class="container">
-
-  <div class="section">
-    <div class="row">
-      <div class = "col s12 m12 l12">
-        <div class = "center">
-          <h4>서비스 신청</h4>
-          <h6>커스터마이즈된 컨설팅 서비스를 이용하시려면 아래에 정보를 입력하시고 신청버튼을 눌러주세요!</h6>
-          <div class = "divider"></div>
-          <br />
-        </div>
-      </div>
-
-      <div class = "col s12 m6 l6">
-        <div class = "container">
-          <h5 class = "center">고객</h5>
-          <form action ="/write_customer" method ="post">
-            <div class="input-field col s12 m12 l12">
-              <i class="material-icons prefix">account_circle</i>
-              <input name ="name_customer" id="name_customer" type="text" required>
-              <label for="name_customer">성명</label>
-            </div>
-            <div class="input-field col s12 m12 l12">
-              <i class="material-icons prefix">phone</i>
-              <input name = "phone_customer"id="phone_customer" type="text" required>
-              <label for="phone_customer">연락처</label>
-            </div>
-            <div class="input-field col s12 m12 l12">
-              <i class="material-icons prefix">email</i>
-              <input name = "email_customer" id="email_customer" type="email" class="validate" required>
-              <label for="email_customer">Email</label>
-            </div>
-            <div class = "col s12 m12 l12 center" style = "margin:10px">
-              <button class="btn pink lighten-4 waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class = "col s12 m6 l6">
-        <div class = "container">
-          <h5 class = "center">컨설턴트</h5>
-          <form action ="/write_artist" method ="post">
-            <div class="input-field col s12 m12 l12">
-              <i class="material-icons prefix">account_circle</i>
-              <input name = "name_artist" id="name_artist" type="text" required>
-              <label for="name_artist">성명</label>
-            </div>
-            <div class="input-field col s12 m12 l12">
-              <i class="material-icons prefix">phone</i>
-              <input name = "phone_artist"id="phone_artist" type="text" required>
-              <label for="phone_artist">연락처</label>
-            </div>
-            <div class="input-field col s12 m12 l12">
-              <i class="material-icons prefix">email</i>
-              <input name="email_artist" id="email_artist" type="email" class="validate" required>
-              <label for="email_artist">Email</label>
-            </div>
-            <div class = "col s12 m12 l12 center" style = "margin:10px">
-              <button class="btn pink lighten-4 waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div> -->
 
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal" >
+  <!-- <div id="modal1" class="modal" >
     <div class="modal-content">
       <div class = "row">
-        <div class = "card-penel red lighten-1 col s12 m6 l6 valign-wrapper hoverable" style = "cursor: pointer;height:300px; padding:0px" onclick="location.href='/user/login';">
+        <div class = "card-penel red lighten-1 col s12 m6 l6 valign-wrapper hoverable" style = "cursor: pointer;height:300px; padding:0px" onclick="location.href='/users/sign_in';">
           <div class="row center valign">
             <h2 class="light-blue-text"><i class="white-text large material-icons">sentiment_very_satisfied</i></h2>
             <h5 class="white-text">일반고객 로그인</h5>
@@ -276,8 +138,7 @@
         </div>
       </div>
     </div>
-  </div>
-
+  </div> -->
 
 <%= render :partial => "/home/footer" %>
 

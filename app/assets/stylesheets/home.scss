@@ -1,40 +1,16 @@
+
 body {
-   font-family: 'Noto Sans KR', Calibri, Trebuchet, sans-serif;
+   font-family: 'Noto Sans KR', 'Wolin', 'healthset', sans-serif;
    word-break:keep-all;
+
  }
-/* label color */
-.input-field label {
-  color: #000;
+
+@font-face {
+  font-family: 'Wolin';
+  src: url(asset-path('fonts/Wolin.woff'));
 }
-/* label focus color */
-.input-field input[type=text]:focus + label {
-  color: #f8bbd0;
-}
-/* label underline focus color */
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid #f8bbd0;
-  box-shadow: 0 1px 0 0 #f8bbd0;
-}
-/* valid color */
-.input-field input[type=text].valid {
-  border-bottom: 1px solid #f8bbd0;
-  box-shadow: 0 1px 0 0 #f8bbd0;
-}
-/* invalid color */
-.input-field input[type=text].invalid {
-  border-bottom: 1px solid #f8bbd0;
-  box-shadow: 0 1px 0 0 #f8bbd0;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
-  color: #f8bbd0;
-}
-/* label focus color */
-.input-field input[type=email]:focus + label {
-  color: #f8bbd0;
-}
-/* label underline focus color */
-.input-field input[type=email]:focus {
-  border-bottom: 1px solid #f8bbd0;
-  box-shadow: 0 1px 0 0 #f8bbd0;
+
+@font-face {
+  font-family: 'healthset';
+  src: url(asset-path('fonts/healthset.woff'));
 }
