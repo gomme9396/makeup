@@ -7,7 +7,7 @@ ko:
         password: "비밀번호"
         password_confirmation: "비밀번호 확인"
         remember_me: "로그인 정보 기억하기"
-        reset_password_token:
+        reset_password_token: "변경 비밀번호"
         unlock_token:
     models:
       user: "사용자"
@@ -44,7 +44,7 @@ ko:
         instruction: "누군가 당신의 비밀번호를 변경하는 링크를 요청했으며, 다음의 링크에서 비밀번호 변경이 가능합니다."
         instruction_2: "비밀번호 변경을 요청하지 않으셨다면 이 메일을 무시하십시오."
         instruction_3: "위 링크에 접속하여 새로운 비밀번호를 생성하기 전까지 귀하의 비밀번호는 변경되지 않습니다."
-        subject: "비밀번호 재설정 안내"
+        subject: "화장선생 비밀번호 재설정 안내"
       unlock_instructions:
         action: "본인 계정 잠금 해제"
         greeting: "%{recipient}님 안녕하세요!"
@@ -113,6 +113,7 @@ ko:
       already_confirmed: "은(는) 이미 인증되었습니다. 다시 로그인해 보세요."
       confirmation_period_expired: "%{period} 이내에 이메일 인증을 해야 합니다. 새로 요청해 주세요."
       expired: "이(가) 만료되었습니다 새로 요청해 주세요."
+      invalid: " : 유효한 비밀번호가 아닙니다. 다시 비밀번호 변경을 요청하십니오."
       not_found: "찾을 수 없습니다."
       not_locked: "은(는) 잠기지 않았습니다."
       not_saved: "아래의 오류로 인해서 가입에 실패했습니다."
