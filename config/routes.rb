@@ -11,6 +11,18 @@ Rails.application.routes.draw do
   get 'home/list'
   get 'user/join'
 
+  get 'consulting/c_list'
+  get 'consulting/c_write'
+  get 'consulting/c_info/:id' => "consulting#c_info"
+
+  post 'consulting/c_handout'
+
+  get 'profile/conp_write'
+  get 'profile/cusp_write'
+  post 'profile/conp_handout'
+  post 'profile/cusp_handout'
+
+
 
   # 회원가입 기능 구현
   # resources :users

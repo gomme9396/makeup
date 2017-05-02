@@ -1,0 +1,116 @@
+<%= render :partial => "/home/navbar" %>
+
+
+<div class = "container">
+  <form action="/profile/conp_handout" method="POST" enctype="multipart/form-data">
+    <div class = "card">
+      <div class = "card-content">
+        <span class = "card-title">컨설턴트 프로필 작성</span>
+        <div class = "row">
+          <div class = "input-field col s6 m6 l6">
+            <input placeholder="<%= current_user.name %>" type = "text" disabled id="conf_name">
+            <label for="cnof_name">이름</label>
+          </div>
+
+          <div class = "input-field col s6 m6 l6">
+            <input placeholder="<%= current_user.email %>" type = "text" disabled id="conf_email" name = "conf_email">
+            <label for="conf_email">이메일</label>
+          </div>
+
+          <div class = "input-field col s12 m12 l12">
+            <textarea id = "conp_intro" name ="conp_intro" class = "materialize-textarea" placeholder="컨설턴트의 자기소개를 자유롭게 작성해주세요"></textarea>
+            <label for = "conf_intro">자기소개</label>
+          </div>
+
+          <div class="file-field input-field col s12 m12 l12">
+            <div class="btn">
+              <span>프로필 사진</span>
+              <input type="file" id = "conp_image" name ="conp_image">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="프로필 사진을 등록하세요">
+            </div>
+          </div>
+
+          <div class = "input-field col s12 m2 l2">
+            <input type="checkbox" class="filled-in" id="conf_mon_able" name="conf_mon_able" />
+            <label for="conf_mon_able">월요일 가능</label>
+          </div>
+
+          <div class = "input-field col s12 m4 l4">
+            <input type = "text" id = "conf_mon_time" name ="conf_mon_time" placeholder="월요일 컨설팅 가능시간을 입력해주세요"></textarea>
+            <label for = "conf_mon_time">가능시간</label>
+          </div>
+
+          <div class = "input-field col s12 m2 l2">
+            <input type="checkbox" class="filled-in" id="conf_tue_able" name="conf_tue_able" />
+            <label for="conf_tue_able">화요일 가능</label>
+          </div>
+
+          <div class = "input-field col s12 m4 l4">
+            <input type = "text" id = "conf_tue_time" name ="conf_tue_time" placeholder="화요일 컨설팅 가능시간을 입력해주세요"></textarea>
+            <label for = "conf_tue_time">가능시간</label>
+          </div>
+
+          <div class = "input-field col s12 m2 l2">
+            <input type="checkbox" class="filled-in" id="conf_wed_able" name="conf_wed_able" />
+            <label for="conf_wed_able">수요일 가능</label>
+          </div>
+
+          <div class = "input-field col s12 m4 l4">
+            <input type = "text" id = "conf_wed_time" name ="conf_wed_time" placeholder="수요일 컨설팅 가능시간을 입력해주세요"></textarea>
+            <label for = "conf_wed_time">가능시간</label>
+          </div>
+
+          <div class = "input-field col s12 m2 l2">
+            <input type="checkbox" class="filled-in" id="conf_thu_able" name="conf_thu_able" />
+            <label for="conf_thu_able">목요일 가능</label>
+          </div>
+
+          <div class = "input-field col s12 m4 l4">
+            <input type = "text" id = "conf_thu_time" name ="conf_thu_time" placeholder="목요일 컨설팅 가능시간을 입력해주세요"></textarea>
+            <label for = "conf_thu_time">가능시간</label>
+          </div>
+
+          <div class = "input-field col s12 m2 l2">
+            <input type="checkbox" class="filled-in" id="conf_fri_able" name="conf_fri_able" />
+            <label for="conf_fri_able">금요일 가능</label>
+          </div>
+
+          <div class = "input-field col s12 m4 l4">
+            <input type = "text" id = "conf_fri_time" name ="conf_fri_time" placeholder="금요일 컨설팅 가능시간을 입력해주세요"></textarea>
+            <label for = "conf_fri_time">가능시간</label>
+          </div>
+
+          <div class = "input-field col s12 m2 l2">
+            <input type="checkbox" class="filled-in" id="conf_sat_able" name="conf_sat_able" />
+            <label for="conf_sat_able">토요일 가능</label>
+          </div>
+
+          <div class = "input-field col s12 m4 l4">
+            <input type = "text" id = "conf_sat_time" name ="conf_sat_time" placeholder="토요일 컨설팅 가능시간을 입력해주세요"></textarea>
+            <label for = "conf_sat_time">가능시간</label>
+          </div>
+
+          <div class = "input-field col s12 m2 l2">
+            <input type="checkbox" class="filled-in" id="conf_sun_able" name="conf_sun_able" />
+            <label for="conf_sun_able">일요일 가능</label>
+          </div>
+
+          <div class = "input-field col s12 m4 l4">
+            <input type = "text" id = "conf_sun_time" name ="conf_sun_time" placeholder="일요일 컨설팅 가능시간을 입력해주세요"></textarea>
+            <label for = "conf_sun_time">가능시간</label>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

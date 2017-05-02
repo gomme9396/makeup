@@ -1,0 +1,23 @@
+
+
+<%=@consult.c_writer %> <br />
+
+<%=@consult.c_name%> <br />
+<%=@consult.c_price%>원 <br />
+<p>
+  <%= simple_format(@consult.c_intro)%> <br />
+  <%=@consult.c_curri%> <br />
+
+</p>
+<% if @consult.c_oneday == 1 %>
+가능
+<% else %>
+불가능
+<% end %> <br />
+<% if @consult.c_group == 1 %>
+가능
+<% else %>
+불가능
+<% end %><br />
+<%=@consult.c_material%> <br />
+<%=@consult.c_time%>

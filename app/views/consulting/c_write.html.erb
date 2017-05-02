@@ -1,0 +1,142 @@
+<%= render :partial => "/home/navbar" %>
+
+<!-- <div class = "container">
+  <%= form_for "consulting/c_handout", url: {action: "c_handout"} do |f| %>
+
+  <div class = "card">
+    <div class = "card-content">
+      <span class = "card-title">컨설팅 커리큘럼 등록하기</span>
+      <input type="hidden" name="c_writer" value="<%= current_user.name %>">
+      <div class = "row">
+        <div class = "field col s6">
+          <%= f.label :"컨설팅 제목" %><br />
+          <%= f.text_field :c_name, class: "validate", placeholder: "컨설팅명을 입력해주세요"%>
+        </div>
+
+        <div class = "field col s6">
+          <%= f.label :"가격" %><br />
+          <%= f.number_field :c_price, class: "validate", placeholder: "컨설팅 가격을 입력해주세요(수수료 포함)"%>
+        </div>
+
+        <div class = "field col s12">
+          <%= f.label :"컨설팅 소개" %><br />
+          <%= f.text_area :c_intro, class: "validate materialize-textarea", placeholder: "컨설팅에 대해서 개략적인 소개를 작성바랍니다"%>
+        </div>
+
+        <div class = "field col s12">
+          <%= f.label :"커리큘럼 소개" %><br />
+          <%= f.text_area :c_curri, class: "validate materialize-textarea", placeholder: "커리큘럼에 대해서 작성바랍니다(순서, 과정 등)"%>
+        </div>
+
+        <div class = "field col s12">
+          <%= f.label :"컨설팅 준비물" %><br />
+          <%= f.text_area :c_material, class: "validate materialize-textarea", placeholder: "고객이 컨설팅하기전에 준비해오면 좋은 준비물을 작성해주세요"%>
+        </div>
+
+        <div class = "field col s4">
+          <%= select_tag(:c_oneday, options_for_select([['예',1],["아니오",2]])) %>
+        </div>
+
+      </div>
+      <div class = "card-action">
+        <div class = "action">
+          <%= f.submit "작성완료", class: "btn" %>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <% end %>
+
+</div> -->
+
+
+<div class="container">
+  <form action="/consulting/c_handout" method="POST" enctype="multipart/form-data">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">컨설팅 커리큘럼 등록하기</span>
+
+          <div class="row">
+            <input type="hidden" name="c_writer" value="<%= current_user.name %>">
+            <input type="hidden" name="c_email" value="<%= current_user.email %>">
+
+            <div class="input-field col s6">
+              <input placeholder="컨설팅명을 입력해주세요" id="c_name" name="c_name" type="text" class="validate">
+              <label for="c_name">컨설팅명</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input placeholder="가격을 입력해주세요(수수료 포함)" id = "c_price" name="c_price" type="number" class="validate">
+              <label for="c_price">가격</label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="c_intro" name="c_intro" class="materialize-textarea" data-length="300" placeholder="컨설팅 클래스에 대해서 개략적인 소개를 작성바랍니다"></textarea>
+              <label for="consulting_intro">컨설팅 소개</label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="c_curri" name="c_curri" class="materialize-textarea" data-length="300" placeholder="컨설팅 클래스에서 어떤것을 알려주는지 작성바랍니다"></textarea>
+              <label for="c_curri">컨설팅 커리큘럼</label>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="c_material" name="c_material" class="materialize-textarea" data-length="300" placeholder="고객이 컨설팅하기전에 준비해오면 좋은 준비물을 작성해주세요"></textarea>
+              <label for="c_material">컨설팅 준비물</label>
+            </div>
+
+            <div class="input-field col s6 m4 l4" name="c_oneday">
+              <select>
+                <option value="" disabled selected>원데이 클래스인가요?</option>
+                <option value="1">네</option>
+                <option value="2">아니오</option>
+              </select>
+              <label>원데이 클래스</label>
+            </div>
+
+            <div class="input-field col s6 m4 l4" name="c_group">
+              <select>
+                <option value="" disabled selected>그룹수업이 가능한가요?</option>
+                <option value="1">네</option>
+                <option value="2">아니오</option>
+              </select>
+              <label>그룹수업</label>
+            </div>
+
+             <div class="input-field col s6 m4 l4">
+              <input placeholder="수업은 몇시간동안 진행되나요?" name="c_time" id="c_time" type="number" class="validate">
+              <label for="c_time">수업시간</label>
+            </div>
+
+
+
+
+          </div>
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>사진</span>
+              <input type="file" id = "curriculum_image" name ="curriculum_image" multiple>
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="사진을 선택해주세요(2장까지 가능)">
+            </div>
+          </div>
+      </div>
+      <div class = "card-action">
+
+        <input class = "btn" type="submit" value="제출하기">
+        <a class = "btn" href = "/consulting/c_list">취소하기</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+$(document).ready(function() {
+  $('input#input_text, textarea#textarea1').characterCounter();
+  $('select').material_select();
+});
+</script>

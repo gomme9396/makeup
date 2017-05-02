@@ -11,7 +11,47 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170330085341) do
+ActiveRecord::Schema.define(version: 20170428065657) do
+
+  create_table "conprofiles", force: :cascade do |t|
+    t.string   "conp_intro"
+    t.integer  "conp_mon_able"
+    t.integer  "conp_mon_time"
+    t.integer  "conp_tue_able"
+    t.integer  "conp_tue_time"
+    t.integer  "conp_wed_able"
+    t.integer  "conp_wed_time"
+    t.integer  "conp_thu_able"
+    t.integer  "conp_thu_time"
+    t.integer  "conp_fri_able"
+    t.integer  "conp_fri_time"
+    t.integer  "conp_sat_able"
+    t.integer  "conp_sat_time"
+    t.integer  "conp_sun_able"
+    t.integer  "conp_sun_time"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "consults", force: :cascade do |t|
+    t.string   "c_writer"
+    t.string   "c_email"
+    t.string   "c_name"
+    t.integer  "c_price"
+    t.string   "c_intro"
+    t.string   "c_curri"
+    t.integer  "c_oneday"
+    t.integer  "c_group"
+    t.string   "c_material"
+    t.integer  "c_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cusprofiles", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"

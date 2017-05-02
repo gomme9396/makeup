@@ -1,0 +1,33 @@
+<%= render :partial => "/home/navbar" %>
+
+
+<div class = "container">
+  <div class = "row">
+
+      <% @consults.each do |a| %>
+      <div class = "col s4 m4 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="<%= image_path "face1.jpg" %>">
+            <span class="card-title white red-text" style="font-weight:600; padding:5px; padding-bottom:10px; margin:20px"><%=a.c_price %>원</span>
+          </div>
+          <div class="card-content">
+            <div class="chip"><img src="<%= image_path "face1.jpg" %>" alt="Contact Person"><%= a.c_writer %></div>
+            <h5 style="margin-top:0px; margin-bottion:5px"><%= a.c_name %></h5>
+            <a>#대전</a>
+          </div>
+          <div class="card-action">
+            <a href="/consulting/c_info/<%=a.id%>">자세히 알아보기</a>
+          </div>
+        </div>
+      </div>
+      <% end %>
+
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+   $('select').material_select();
+ });
+</script>
